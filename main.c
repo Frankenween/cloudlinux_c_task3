@@ -40,7 +40,7 @@ int main(int argc, const char *argv[]) {
         close(pipe_fd[1]);
         return 1;
     }
-    __pid_t pid2 = fork(); // to run prog2
+    __pid_t pid2 = fork(); // run prog2
     if (pid2 == -1) {
         perror("fork for prog2 failed");
         close(output_fd);
